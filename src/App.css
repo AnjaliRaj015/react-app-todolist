@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg,rgb(167, 164, 23) 0%,rgb(255, 252, 100) 100%);
+}
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 520px;
+  min-height: 600px;
+  background: #031f03;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+h1 {
+  margin: 32px 0;
+  color: rgb(180, 228, 8);
+  font-size: 24px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #dbff0c;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: rgb(170, 180, 25);
+}
+
+.todo-input::placeholder {
+  color: #aace49;
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(90deg,rgb(89, 95, 3) 0%,rgb(176, 204, 18) 100%);
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
+}
+
+.todo-input.edit {
+  border: 2px solid #99ff14;
+}
+
+.todo-button.edit {
+  background: linear-gradient(90deg,rgb(182, 107, 8) 0%,rgb(241, 209, 25) 100%);
+  padding: 16px 22px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background: linear-gradient(90deg,rgb(133, 47, 8) 0%,rgb(212, 70, 14) 100%);
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.todo-row:nth-child(4n + 1) {
+  background: linear-gradient(90deg,rgb(24, 124, 11) 0%,rgb(38, 238, 12) 100%);
+}
+
+.todo-row:nth-child(4n + 2) {
+  background: linear-gradient(90deg,rgb(93, 117, 6) 0%,rgb(225, 250, 0) 100%);
+}
+
+.todo-row:nth-child(4n + 3) {
+  background: linear-gradient(90deg,rgb(56, 77, 9) 0%,rgb(29, 122, 10) 100%);
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  font-size:18px;
+  color: rgb(255, 255, 255);
+}
+
+.edit-icon {
+  color: #fff;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #555a07; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(85, 163, 11); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(13, 54, 3); 
+}
